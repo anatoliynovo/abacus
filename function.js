@@ -1,18 +1,19 @@
 /* global $ */
 /*eslint-env browser*/
 
-// Initialisierung der DOM Objekte (von oben nach unten)
+// Initialisierung der DOM Objekte
 var $content = $('#content');
 var $counter = $content.find('.counter');
 var $abacusframe = $content.find('.abacus-frame');
 
-//ABAKUS-FENSTER (DARSTELLUNG VON OBEN NACH UNTEN)
+//ABAKUS-FENSTER
 
 //Zähler auf 0 setzen
 var counter = 0;
 //Variable mit der Klasse "counter" den Zähler mit 0 übergeben
 $counter.text(counter);
 
+// Reset Button
 var $reset = $('.btn');
 
 // 5 Linien bilden, dem Abakus-Fenster zuweisen
