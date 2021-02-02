@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Insb. für Mobilgeräte: Anpassen an Gerätegröße, Zoom zulassen -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-------------------- jQuery ------------------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-------------------- Bootstrap + CSS  ------------------------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Abakus</title>
+  </head>
+
+  <body>
+    <!--- Abakus-Container erzeugen-->
+    <div id="content">
+      <!--- Name -->
+      <h1>Abakus</h1>
+      <hr />
+      <!--- Darstellung des Zählers oberhalb des Rechenbrettes -->
+      <p><span class="counter"></span></p>
+
+      <div class="container">
+        <!--- Haupt-Fenster mit allen Darstellungens-->
+        <div class="abacus-frame"></div>
+          <div class="text-center">
+            <button type="button" class="btn btn-outline-danger">
+              Reset
+            </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--- JS Einbinden-->
+  <script type="text/javascript" src="function.js"></script>
+</html>
