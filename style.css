@@ -87,7 +87,7 @@ p {
 /* Verschieben nach Position "rechts/links" mit Animation */
 
 .right {
-    transform: translateX(435px);
+    transform: translateX(618px);
     transition: all 1.5s ease-in-out;
 }
 
